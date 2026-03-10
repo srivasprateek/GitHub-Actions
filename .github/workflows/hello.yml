@@ -5,16 +5,15 @@ on:
     branches: [main]
 
 jobs:
-
   greet:
     runs-on: ubuntu-latest
     steps:
-      - name: say hello prateek
+      - name: Say hello Prateek
         run: echo "Hello Prateek"
 
   details:
-    runs-on:  ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - name: show what is the version of docker
+      - name: Show Docker version
         run: docker --version
   
