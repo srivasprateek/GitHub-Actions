@@ -1,0 +1,20 @@
+name: hello
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello prateek
+        run: echo "Hello Prateek"
+
+  details:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: show what is the version of docker
+        run: docker --version
+  
