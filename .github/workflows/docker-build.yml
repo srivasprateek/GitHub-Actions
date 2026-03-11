@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ${{ vars.DOCKERHUB_USER }}/flask-app:latest .
+        run: docker build -t ${{ vars.DOCKERHUB_USERNAME }}/flask-app:latest .
 
       - name: Push Docker image
-        run: docker push ${{ vars.DOCKERHUB_USER }}/flask-app:latest
+        run: docker push ${{ vars.DOCKERHUB_USERNAME }}/flask-app:latest
