@@ -3,6 +3,8 @@ name: hello
 on:
   workflow_dispatch:
 
+  push:
+    branches: [main]
     paths:
       - '**.html'
 
@@ -10,11 +12,9 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - name: Say hello Prateek
-        run: echo "Hello Prateek"
+      - run: echo "Hello Prateek"
 
   details:
     runs-on: ubuntu-latest
     steps:
-      - name: Show Docker version
-        run: docker --version
+      - run: docker --version
