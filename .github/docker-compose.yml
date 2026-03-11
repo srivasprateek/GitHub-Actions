@@ -1,0 +1,8 @@
+services:
+
+  web:
+    image: ${{ DOCKERHUB_USERNAME }}/flask-app:latest 
+    ports:
+      - "80:80"
+
+      
