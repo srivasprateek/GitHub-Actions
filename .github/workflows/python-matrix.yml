@@ -1,7 +1,7 @@
 name: Python lint
 
 on:
-  workflow dispatch:
+  workflow_dispatch:
 
 jobs:
   validate:
